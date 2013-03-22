@@ -19,8 +19,8 @@ module.exports = (grunt) ->
 				#'thumbnails.less'
 				#'media.less'
 				'utilities.less'
-				#'responsive-utilities.less'
-				#'responsive-767px-max.less'
+				'responsive-utilities.less'
+				'responsive-767px-max.less'
 			]
 
 		less:
@@ -35,7 +35,7 @@ module.exports = (grunt) ->
 
 		watch:
 			less:
-				files: ['scripts/less/app.less']
+				files: ['scripts/app.less']
 				tasks: ['less']
 
 		connect:
@@ -43,7 +43,7 @@ module.exports = (grunt) ->
 				options:
 					keepalive: true
 
-	grunt.registerTask 'default', ['bootstrap', 'less']
+	#grunt.registerTask 'default', ['bootstrap', 'less']
 
 	grunt.loadNpmTasks 'grunt-contrib-less'
 	grunt.loadNpmTasks 'grunt-contrib-watch'
