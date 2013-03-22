@@ -51,7 +51,7 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-bootstrap'
 
 	grunt.registerTask 'gitploy', 'Deploy to GitHub Pages', ->
-		paths = ['lib', 'index.html', 'CNAME']
+		paths = ['lib', 'index.html', 'CNAME', 'robots.txt']
 		Git = require 'git-wrapper'
 		git = new Git()
 		done = @async()
