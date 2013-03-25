@@ -512,8 +512,8 @@ dl.inline{margin:0;}dl.inline dt{display:inline-block;}
 dl.inline dd{margin-left:10px;display:inline-block;}
 .head{padding:25px 0;}@media (max-width:767px){.head{padding:20px;}}.head h1.logo{margin:0;font-size:30px;line-height:1;text-transform:lowercase;}.head h1.logo a{color:#000;text-decoration:none;}
 section{margin-bottom:50px;}@media (max-width:767px){section{padding:20px;}}
-.jumbotron{margin-top:0;padding:45px 0;background-color:#fafafa;border-bottom:1px solid #e5e5e5;}@media (max-width:767px){.jumbotron{padding:20px;}}.jumbotron h2{margin:0;font-size:60px;font-weight:200;line-height:1;letter-spacing:-1px;}
+.jumbotron{margin-top:0;padding:45px 0;background-color:#fafafa;border-bottom:1px solid #e5e5e5;}@media (max-width:767px){.jumbotron{padding:20px;}}.jumbotron h2{margin:0;font-size:60px;font-weight:200;line-height:1;letter-spacing:-1px;}@media (max-width:767px){.jumbotron h2{font-size:50px;}}
 @media (max-width:767px){.jumbotron .signup{margin-top:40px;}}
 @media (max-width:767px){.teasers .teaser{margin-top:50px;}}.teasers .teaser:first-child{margin-top:0;}
-.mission{min-height:330px;}
+@media (min-width:767px){.mission .twitter-tweet{min-height:265px;}}
 .foot{font-size:85%;}@media (max-width:767px){.foot{padding:20px;}}

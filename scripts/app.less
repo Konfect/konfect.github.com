@@ -60,6 +60,9 @@ section {
 		font-weight: 200;
 		line-height: 1;
 		letter-spacing: -1px;
+		@media (max-width: 767px) {
+			font-size: 50px;
+		}
 	}
 	.signup {
 		@media (max-width: 767px) {
@@ -80,7 +83,11 @@ section {
 }
 
 .mission {
-	min-height: 330px;
+	.twitter-tweet {
+		@media (min-width: 767px) {
+			min-height: 265px;
+		}
+	}
 }
 
 .foot {
