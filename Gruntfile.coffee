@@ -18,9 +18,13 @@ module.exports = (grunt) ->
 				#'navbar.less'
 				#'thumbnails.less'
 				#'media.less'
+				#'wells.less'
 				'utilities.less'
 				'responsive-utilities.less'
 				'responsive-767px-max.less'
+				'responsive-768px-979px.less'
+				#'responsive-1200px-min.less'
+				#'responsive-navbar.less'
 			]
 
 		less:
