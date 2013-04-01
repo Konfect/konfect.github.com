@@ -3,7 +3,7 @@ module.exports = (grunt) ->
 	grunt.initConfig
 
 		bootstrap:
-			dest: 'scripts/bootstrap'
+			dest: '_scripts/bootstrap'
 			js: []
 			css: [
 				'reset.less'
@@ -31,15 +31,15 @@ module.exports = (grunt) ->
 			app:
 				files: 
 					'lib/style.min.css': [
-						'scripts/bootstrap/css/bootstrap.css'
-						'scripts/app.less'
+						'_scripts/bootstrap/css/bootstrap.css'
+						'_scripts/app.less'
 					]
 				options:
 					compress: true
 
 		watch:
 			less:
-				files: ['scripts/app.less']
+				files: ['_scripts/app.less']
 				tasks: ['less']
 
 		connect:
@@ -53,20 +53,3 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-watch'
 	grunt.loadNpmTasks 'grunt-contrib-connect'
 	grunt.loadNpmTasks 'grunt-bootstrap'
-
-	grunt.registerTask 'gitploy', 'Deploy to GitHub Pages', ->
-		paths = ['lib', 'index.html']
-		Git = require 'git-wrapper'
-		git = new Git()
-		done = @async()
-		git.exec 'checkout gh-pages', (err) ->
-			throw err if err?
-			git.exec 'checkout master -- ' + paths.join(' '), (err) ->
-				throw err if err?
-				git.exec 'commit -am "updates from master"', (err) ->
-					throw err if err?
-					git.exec 'push origin gh-pages', (err) ->
-						throw err if err?
-						git.exec 'checkout master', (err) ->
-							throw err if err?
-							done()

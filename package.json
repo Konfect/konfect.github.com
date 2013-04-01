@@ -1,6 +1,6 @@
 {
   "name": "Konfect-website",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "jacob@webcom.dk",
   "private": true,
   "main": "index.html",
@@ -9,7 +9,6 @@
     "grunt-contrib-less": "0.5.x",
     "grunt-contrib-watch": "0.3.x",
     "grunt-contrib-connect": "0.1.x",
-	"grunt-bootstrap": "0.1.x",
-	"git-wrapper": "0.1.x"
+	"grunt-bootstrap": "0.1.x"
   }
 }
