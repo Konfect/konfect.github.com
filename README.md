@@ -1,5 +1,7 @@
 # Konfect
 
+Source code for [Konfect](http://www.konfect.com/)'s website.
+
 ### Prerequisites
 
 Everything is built and handled by [Grunt](http://gruntjs.com).
