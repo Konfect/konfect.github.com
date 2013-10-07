@@ -1,0 +1,7 @@
+projectDirectory = "$CWD"
+windowTitle = "$TM_DISPLAYNAME — $TM_SCM_BRANCH"
+
+# Extra files to include
+myExtraIncludes = ".tm_properties,.gitignore,.gitkeep,.gitmodules"
+fileBrowserGlob  = "{*,$myExtraIncludes}"
+include = "{$include,$myExtraIncludes}"

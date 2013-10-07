@@ -23,9 +23,6 @@ dl.inline {
 }
 
 .head {
-	@media (max-width: 767px) {
-		padding: @smallscreen-padding;
-	}
 	padding: 25px 0;
 	h1.logo {
 		margin: 0;
@@ -35,6 +32,12 @@ dl.inline {
 		a {
 			color: #000;
 			text-decoration: none;
+		}
+	}
+	@media (max-width: 767px) {
+		padding: @smallscreen-padding;
+		h1.logo {
+			font-size: 30px;
 		}
 	}
 }
@@ -47,9 +50,6 @@ section {
 }
 
 .jumbotron {
-	@media (max-width: 767px) {
-		padding: @smallscreen-padding;
-	}
 	margin-top: 0;
 	padding: 45px 0;
 	background-color: #fafafa;
@@ -69,6 +69,9 @@ section {
 			margin-top: 40px;
 		}
 	}
+	@media (max-width: 767px) {
+		padding: @smallscreen-padding;
+	}
 }
 
 .teasers {
@@ -85,7 +88,7 @@ section {
 .mission {
 	.twitter-tweet {
 		@media (min-width: 767px) {
-			min-height: 265px;
+			min-height: 275px;
 		}
 	}
 }
