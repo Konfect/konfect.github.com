@@ -13,5 +13,9 @@
     "grunt-html-build": "0.2.x",
     "grunt-contrib-cssmin": "0.6.x",
     "grunt-uncss": "0.1.x"
+  },
+  "dependencies": {
+    "uncss": "~0.5.3",
+    "cssmin": "~0.4.1"
   }
 }

@@ -38,13 +38,13 @@ module.exports = (grunt) ->
 					compress: true
 					yuicompress: true
 
-		# uncss:
-		# 	app:
-		# 		files: '_tmp/style.min.css': '_scripts/index.html'
-		#
-		# cssmin:
-		# 	app:
-		# 		files: '_tmp/style.min.css': '_tmp/style.min.css'
+		uncss:
+			app:
+				files: '_tmp/style.min.css': '_scripts/index.html'
+
+		cssmin:
+			app:
+				files: '_tmp/style.min.css': '_tmp/style.min.css'
 
 		htmlbuild:
 			app:
@@ -63,12 +63,12 @@ module.exports = (grunt) ->
 				files:
 					'index.html': '_tmp/index.html'
 
-	#grunt.registerTask 'default', ['less', 'uncss', 'cssmin', 'htmlbuild', 'htmlmin']
-	grunt.registerTask 'default', ['less', 'htmlbuild', 'htmlmin']
+  grunt.registerTask 'default', ['less', 'uncss', 'cssmin', 'htmlbuild', 'htmlmin']
+  #grunt.registerTask 'default', ['less', 'htmlbuild', 'htmlmin']
 
-	grunt.loadNpmTasks 'grunt-bootstrap'
-	grunt.loadNpmTasks 'grunt-contrib-less'
-	grunt.loadNpmTasks 'grunt-html-build'
-	grunt.loadNpmTasks 'grunt-contrib-htmlmin'
-	# grunt.loadNpmTasks 'grunt-uncss'
-	# grunt.loadNpmTasks 'grunt-contrib-cssmin'
+  grunt.loadNpmTasks 'grunt-bootstrap'
+  grunt.loadNpmTasks 'grunt-contrib-less'
+  grunt.loadNpmTasks 'grunt-html-build'
+  grunt.loadNpmTasks 'grunt-contrib-htmlmin'
+  grunt.loadNpmTasks 'grunt-uncss'
+  grunt.loadNpmTasks 'grunt-contrib-cssmin'

@@ -5,3 +5,6 @@ windowTitle = "$TM_DISPLAYNAME — $TM_SCM_BRANCH"
 myExtraIncludes = ".tm_properties,.gitignore,.gitkeep,.gitmodules"
 fileBrowserGlob  = "{*,$myExtraIncludes}"
 include = "{$include,$myExtraIncludes}"
+
+softWrap = true
+tabSize = 2
